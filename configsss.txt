@@ -1,6 +1,6 @@
 site					user					key				more
 
-Wix						yoni.str@gmail.com	    yonishir2015    OneCard site: 
+Wix						yoni.str@gmail.com	    yonishir2015    OneCard site: www.yonistr.wix.com/onecard
 Joined Gmail			yonis.shirb@gmail.com   yonishir
 Joined Microsoft		yonis.shirb@gmail.com	Yonishir		birth date: 1.1.2001
 Sql database			yonisshirb				********
