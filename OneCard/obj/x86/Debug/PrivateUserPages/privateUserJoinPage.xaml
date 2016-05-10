@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="OneCard.privateUserJoinPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:OneCard"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="315" Height="565">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="17*"/>
+            <ColumnDefinition Width="18*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:ConnectionId='1' x:Name="backButton" Content="Button" HorizontalAlignment="Left" Margin="8,8,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}" Foreground="{x:Null}" Height="23" Width="40"                                >
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="ms-appx:///Assets/backArrowSign.png"/>
+            </Button.Background>
+        </Button>
+        <TextBlock x:ConnectionId='2' x:Name="signUpHeadBlock" HorizontalAlignment="Left" Margin="38,47,0,0" TextWrapping="Wrap" Text="Sign Up for OneCard" VerticalAlignment="Top" FontWeight="Bold" FontSize="24" Width="235" SelectionHighlightColor="{x:Null}" Foreground="#FF2B41A4" Grid.ColumnSpan="2"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="461" Margin="2,94,0,0" VerticalAlignment="Top" Width="303" Grid.ColumnSpan="2">
+            <StackPanel HorizontalAlignment="Left" Height="780" Margin="7.5,7.5,0,0" VerticalAlignment="Top" Width="295">
+                <TextBox x:ConnectionId='3' x:Name="firstNameBox" TextWrapping="Wrap" Text="First Name" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <TextBox x:ConnectionId='4' x:Name="lastNameBox" TextWrapping="Wrap" Text="Last Name" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <TextBox x:ConnectionId='5' x:Name="emailBox" TextWrapping="Wrap" Text="Email" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <TextBox x:ConnectionId='6' x:Name="cellPhoneBox" TextWrapping="Wrap" Text="Cell Phone" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <ComboBox x:ConnectionId='7' x:Name="countryComboBox" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontFamily="Script MT Bold" PlaceholderText="Country" Foreground="#FBFFFFFF" Background="#FF010D8B" BorderBrush="#FF0A1455">
+                    <ComboBoxItem Content="Israel"/>
+                    <ComboBoxItem Content="USA"/>
+                </ComboBox>
+                <TextBox x:ConnectionId='8' x:Name="addressBox" TextWrapping="Wrap" Text="Address" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <DatePicker Header="Date Of Birth" />
+                <PasswordBox Header="Password" PlaceholderText="Password"/>
+                <PasswordBox PlaceholderText="Confirm Password"/>
+                <TextBox x:ConnectionId='9' x:Name="securityQuestionBox" TextWrapping="Wrap" Text="Security Question" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <TextBox x:ConnectionId='10' x:Name="securityQuestionBox_Copy" TextWrapping="Wrap" Text="Security Answer" BorderBrush="#FF0A1455" Foreground="#FBFFFFFF" FontSize="16" Background="#FF010D8B"/>
+                <Button x:ConnectionId='11' x:Name="addPhotoButton" Content="Add your photo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <PasswordBox Header="Choose a Pincode for future identification" PlaceholderText="4 Charecter Pincode"  />
+                <CheckBox x:ConnectionId='12' x:Name="checkBox" Content="Get updateds from OneCard" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <RichTextBlock Height="100" SelectionHighlightColor="Blue">
+                    <Paragraph>By clicking Join, you agree to
+                        <Hyperlink NavigateUri="http://msdn.microsoft.com/en-us/library/windows/apps/windows.ui.xaml.documents.hyperlink.aspx">OneCard's User Agreement, Privacy Policy and Cookie Policy.</Hyperlink>
+                    </Paragraph>
+                </RichTextBlock>
+                <Button x:ConnectionId='13' x:Name="joinButton" Content="Join" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"                                   />
+                <RichTextBlock Height="100" SelectionHighlightColor="Blue">
+                    <Paragraph>Already have an account?
+                        <Hyperlink x:ConnectionId='14'                                >Sign in!</Hyperlink>
+                    </Paragraph>
+                </RichTextBlock>
+
+
+            </StackPanel>
+        </ScrollViewer>
+
+    </Grid>
+</Page>
+
