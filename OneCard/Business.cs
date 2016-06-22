@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OneCard
 {
-    class Business
+    public class Business
     {
         //list of all customers names
         public SortedSet<string> allCustomers { get; set; }

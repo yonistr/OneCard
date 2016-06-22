@@ -25,6 +25,7 @@ namespace OneCard
         public AllCustomersPage()
         {
             this.InitializeComponent();
+            MyCustomers.Source = Card.GenerateCategory();
         }
 
         private void ShowSplitSettings(object sender, RoutedEventArgs e)

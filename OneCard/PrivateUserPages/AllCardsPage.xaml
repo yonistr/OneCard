@@ -8,11 +8,11 @@
     mc:Ignorable="d">
 
 
-    <!--Page.Resources>
+    <Page.Resources>
 
         <CollectionViewSource x:Name="MyCards"  IsSourceGrouped="True" />
 
-        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="data:TempCard">
+        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="local:Card">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -35,15 +35,15 @@
                            x:Phase="1"  
                            Style="{ThemeResource BaseTextBlockStyle}"
                            Margin="12,6,0,0"/>
-                <TextBlock  Grid.Column="1"
+                <!--TextBlock  Grid.Column="1"
                             Grid.Row="1"
                             Text="{x:Bind Position}" 
                             x:Phase="2"
                             Style="{ThemeResource BodyTextBlockStyle}"
-                            Margin="12,0,0,6"/>
+                            Margin="12,0,0,6"/-->
             </Grid>
         </DataTemplate>
-    </-->
+    </Page.Resources>
     
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -62,10 +62,10 @@
                 VerticalAlignment="Center"
                 Style="{ThemeResource TitleTextBlockStyle}" 
                 Grid.Column="1"/>
-        <StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <!--StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
             <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/>
-        </StackPanel>
-        <!--ListView ItemsSource="{x:Bind ContactsCVS.View}"
+        </-->
+        <ListView ItemsSource="{x:Bind MyCards.View}"
                   ItemTemplate="{StaticResource ContactListViewTemplate}"
                   SelectionMode="Single"
                   ShowsScrollingPlaceholders="True"
@@ -75,14 +75,14 @@
             <ListView.GroupStyle>
                 <GroupStyle >
                     <GroupStyle.HeaderTemplate>
-                        <DataTemplate x:DataType="data:TempCategory">
+                        <DataTemplate x:DataType="local:CardCategory">
                             <TextBlock Text="{x:Bind name}" 
                                        Style="{ThemeResource TitleTextBlockStyle}"/>
                         </DataTemplate>
                     </GroupStyle.HeaderTemplate>
                 </GroupStyle>
             </ListView.GroupStyle>
-        </-->
+        </ListView>
         <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
             <local:PrivateUserNavigateBar x:Name="MyNavigator"/>
         </StackPanel>

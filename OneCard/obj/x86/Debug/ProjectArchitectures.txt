@@ -1,1 +1,1 @@
-C:\Users\jonathan\Documents\Visual Studio 2015\Projects\OneCard\OneCard\OneCard.csproj;x86
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\OneCard.csproj;x86

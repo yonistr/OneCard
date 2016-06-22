@@ -114,7 +114,8 @@
     <Compile Include="BusinessPages\BusinessSettingsPane.xaml.cs">
       <DependentUpon>BusinessSettingsPane.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Cards.cs" />
+    <Compile Include="Customer.cs" />
+    <Compile Include="CustomerCategory.cs" />
     <Compile Include="NFCUtils.cs" />
     <Compile Include="PrivateUser.cs" />
     <Compile Include="PrivateUserPages\AddCardPage.xaml.cs">
@@ -149,8 +150,8 @@
       <DependentUpon>SignInPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SQLUtils.cs" />
-    <Compile Include="TempCard.cs" />
-    <Compile Include="TempCategory.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="CardCategory.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
