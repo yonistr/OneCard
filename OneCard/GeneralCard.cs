@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace OneCard
 {
-    public class Card
+    public class GeneralCard
     {
         public string name { get; set; }
         public bool isLocationAvailable { get; set; }
@@ -15,10 +15,10 @@ namespace OneCard
         public string securityType { get; set; }
         public Uri logoPath { get; set; }
         public bool isFavourite { get; set; }
-        public string subscriptionInfo { get; set; }
-        public string description { get; set; }
+        //public string subscriptionInfo { get; set; }
+        //public string description { get; set; }
 
-        public Card(string name)
+        public GeneralCard(string name)
         {
             this.name = name;
             this.isLocationAvailable = false;
@@ -26,8 +26,8 @@ namespace OneCard
             this.securityType = string.Empty;
             this.logoPath = null;
             this.isFavourite = false;
-            this.subscriptionInfo = string.Empty;
-            this.description = string.Empty;
+            //this.subscriptionInfo = string.Empty;
+            //this.description = string.Empty;
         }
         // generate an example of cards list for a user
         public static ObservableCollection<CardCategory> GenerateCategory()
@@ -36,26 +36,26 @@ namespace OneCard
 
             CardCategory creditCards = new CardCategory();
             creditCards.name = "credit cards";
-            creditCards.Add(new Card("Leumi credit card"));
-            creditCards.Add(new Card("Hapoalim credit card"));
+            creditCards.Add(new GeneralCard("Leumi credit card"));
+            creditCards.Add(new GeneralCard("Hapoalim credit card"));
 
             CardCategory loialtyCards = new CardCategory();
             loialtyCards.name = "Loialty cards";
-            loialtyCards.Add(new Card("Lametayel"));
-            loialtyCards.Add(new Card("Rikushet"));
-            loialtyCards.Add(new Card("Victoria's Secret"));
+            loialtyCards.Add(new GeneralCard("Lametayel"));
+            loialtyCards.Add(new GeneralCard("Rikushet"));
+            loialtyCards.Add(new GeneralCard("Victoria's Secret"));
 
 
             CardCategory gymCards = new CardCategory();
             gymCards.name = "Gym Cards";
-            gymCards.Add(new Card("Holme's Place"));
-            gymCards.Add(new Card("Shape"));
+            gymCards.Add(new GeneralCard("Holme's Place"));
+            gymCards.Add(new GeneralCard("Shape"));
 
 
             CardCategory moviesShowsTickets = new CardCategory();
             moviesShowsTickets.name = "Movies, Shows, Game Tickets";
-            moviesShowsTickets.Add(new Card("Cinema City"));
-            moviesShowsTickets.Add(new Card("Maccabi - Bloomfield"));
+            moviesShowsTickets.Add(new GeneralCard("Cinema City"));
+            moviesShowsTickets.Add(new GeneralCard("Maccabi - Bloomfield"));
 
             categories.Add(creditCards);
             categories.Add(loialtyCards);

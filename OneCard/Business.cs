@@ -9,7 +9,7 @@ namespace OneCard
     public class Business
     {
         //list of all customers names
-        public SortedSet<string> allCustomers { get; set; }
+        //public SortedSet<string> allCustomers { get; set; }
         //login name
         public string username { get; set; }
         //login password
@@ -17,11 +17,12 @@ namespace OneCard
         public string securityQ { get; set; }
         public string securityA { get; set; }
         public string businessName { get; set; }
-        public string email { get; set; }
-        public string cellphoneNumber { get; set; }
-        public string phoneNumber { get; set; }
-        public string primaryAddress { get; set; }
-        public string country { get; set; }
+        //public string email { get; set; }
+        //public string cellphoneNumber { get; set; }
+        //public string phoneNumber { get; set; }
+        //public string primaryaddress { get; set; }
+        //public string country { get; set; }
+        public ContactInfo contactInfo { get; set; } 
         public string description { get; set; }
         public Uri logoPath { get; set; }
 

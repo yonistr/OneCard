@@ -12,7 +12,7 @@
 
         <CollectionViewSource x:Name="MyCards"  IsSourceGrouped="True" />
 
-        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="local:Card">
+        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="local:GeneralCard">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>

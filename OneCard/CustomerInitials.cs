@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OneCard
 {
-    public class CustomerCategory : List<object>
+    public class CustomerInitials : List<object>
     {
-        public object name { get; set; }
+        public object initial { get; set; }
     }
 }

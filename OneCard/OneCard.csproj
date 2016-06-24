@@ -99,6 +99,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Business.cs" />
+    <Compile Include="BusinessInfo.cs" />
     <Compile Include="BusinessPages\AddNewCustomerPage.xaml.cs">
       <DependentUpon>AddNewCustomerPage.xaml</DependentUpon>
     </Compile>
@@ -114,8 +115,12 @@
     <Compile Include="BusinessPages\BusinessSettingsPane.xaml.cs">
       <DependentUpon>BusinessSettingsPane.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ContactInfo.cs" />
     <Compile Include="Customer.cs" />
-    <Compile Include="CustomerCategory.cs" />
+    <Compile Include="DetailedCustomer.cs" />
+    <Compile Include="CustomerInitials.cs" />
+    <Compile Include="FullCard.cs" />
+    <Compile Include="NfcTag.cs" />
     <Compile Include="NFCUtils.cs" />
     <Compile Include="PrivateUser.cs" />
     <Compile Include="PrivateUserPages\AddCardPage.xaml.cs">
@@ -150,8 +155,9 @@
       <DependentUpon>SignInPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="SQLUtils.cs" />
-    <Compile Include="Card.cs" />
+    <Compile Include="GeneralCard.cs" />
     <Compile Include="CardCategory.cs" />
+    <Compile Include="SubscriptionInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">

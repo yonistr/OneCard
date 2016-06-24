@@ -26,7 +26,7 @@ namespace OneCard
         {
             this.InitializeComponent();
             //App.myUser = GenerateUser();
-            MyCards.Source = Card.GenerateCategory();
+            MyCards.Source = GeneralCard.GenerateCategory();
         }
 
         private void ShowSplitSettings(object sender, RoutedEventArgs e)
