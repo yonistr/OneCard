@@ -5,8 +5,10 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -22,6 +24,8 @@ namespace OneCard
     /// </summary>
     public sealed partial class AllCardsPage : Page
     {
+        private GeneralCard SelectedCard;
+
         public AllCardsPage()
         {
             this.InitializeComponent();
@@ -33,5 +37,16 @@ namespace OneCard
         {
             MySettings.privateUserSettingsSplitView.IsPaneOpen = !MySettings.privateUserSettingsSplitView.IsPaneOpen;
         }
+
+        private void OnCardClick(object sender, ItemClickEventArgs e)
+        {
+            // The clicked card it is the new selectedCard
+            SelectedCard = e.ClickedItem as GeneralCard;
+            // Go to the chosen card page and display the full card derived from the general one
+            Frame.Navigate(typeof(PrivateUserPages.ChosenCardPage), SelectedCard, new DrillInNavigationTransitionInfo());
+
+        }
+
+
     }
 }

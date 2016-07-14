@@ -348,6 +348,12 @@
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\backArrowSign.png">
       <PackagePath>Assets\backArrowSign.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\favorite_filled_sign.png">
+      <PackagePath>Assets\favorite_filled_sign.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\favorite_outlined_sign.png">
+      <PackagePath>Assets\favorite_outlined_sign.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_logo.png">
       <PackagePath>Assets\OneCard_logo.png</PackagePath>
     </AppxPackagedFile>
@@ -377,6 +383,9 @@
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NFC_phone.jpg">
+      <PackagePath>Assets\NFC_phone.jpg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Nfc_tag.jpg">
       <PackagePath>Assets\Nfc_tag.jpg</PackagePath>

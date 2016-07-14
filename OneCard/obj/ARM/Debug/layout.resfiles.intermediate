@@ -1,7 +1,10 @@
 WinMetadata\Windows.winmd
 ApplicationInsights.config
 Assets\backArrowSign.png
+Assets\favorite_filled_sign.png
+Assets\favorite_outlined_sign.png
 Assets\LockScreenLogo.scale-200.png
+Assets\NFC_phone.jpg
 Assets\Nfc_tag.jpg
 Assets\OneCard_logo.png
 Assets\SplashScreen.scale-200.png

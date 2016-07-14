@@ -14,6 +14,7 @@ namespace OneCard
         public bool autoWriteLocation { get; set; }
         public string securityType { get; set; }
         public Uri logoPath { get; set; }
+        public string demoLogo { get; set; }//need to delete
         public bool isFavourite { get; set; }
         //public string subscriptionInfo { get; set; }
         //public string description { get; set; }

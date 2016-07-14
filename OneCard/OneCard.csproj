@@ -116,6 +116,7 @@
       <DependentUpon>BusinessSettingsPane.xaml</DependentUpon>
     </Compile>
     <Compile Include="ContactInfo.cs" />
+    <Compile Include="Converters\StringFormatConverter.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="DetailedCustomer.cs" />
     <Compile Include="CustomerInitials.cs" />
@@ -125,6 +126,9 @@
     <Compile Include="PrivateUser.cs" />
     <Compile Include="PrivateUserPages\AddCardPage.xaml.cs">
       <DependentUpon>AddCardPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PrivateUserPages\ChosenCardPage.xaml.cs">
+      <DependentUpon>ChosenCardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="PrivateUserPages\FavoritesPage.xaml.cs">
       <DependentUpon>FavoritesPage.xaml</DependentUpon>
@@ -167,6 +171,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\backArrowSign.png" />
+    <Content Include="Assets\favorite_filled_sign.png" />
+    <Content Include="Assets\favorite_outlined_sign.png" />
+    <Content Include="Assets\NFC_phone.jpg" />
     <Content Include="Assets\Nfc_tag.jpg" />
     <Content Include="Assets\OneCard_logo.png" />
     <Content Include="Properties\Default.rd.xml" />
@@ -204,6 +211,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PrivateUserPages\AddCardPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PrivateUserPages\ChosenCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -12,7 +12,7 @@
 
         <CollectionViewSource x:Name="MyCards"  IsSourceGrouped="True" />
 
-        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="local:GeneralCard">
+        <DataTemplate x:Name="AllCardsTemplate" x:DataType="local:GeneralCard">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -66,7 +66,9 @@
             <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/>
         </-->
         <ListView ItemsSource="{x:Bind MyCards.View}"
-                  ItemTemplate="{StaticResource ContactListViewTemplate}"
+                  ItemTemplate="{StaticResource AllCardsTemplate}"
+                  IsItemClickEnabled="True"
+                  ItemClick="OnCardClick"
                   SelectionMode="Single"
                   ShowsScrollingPlaceholders="True"
                   Grid.Row="1"

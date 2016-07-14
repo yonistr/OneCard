@@ -11,7 +11,7 @@
 
         <CollectionViewSource x:Name="MyCustomers"  IsSourceGrouped="True" />
 
-        <DataTemplate x:Name="ContactListViewTemplate" x:DataType="local:Customer">
+        <DataTemplate x:Name="AllCustomersTemplate" x:DataType="local:Customer">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -19,6 +19,7 @@
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Ellipse x:Name="Ellipse"
@@ -30,16 +31,21 @@
                          HorizontalAlignment="Center"
                          Fill="LightGray"/>
                 <TextBlock Grid.Column="1"
-                           Text="{x:Bind lastName}" 
+                           Text="{x:Bind lastName}"                          
                            x:Phase="1"  
                            Style="{ThemeResource BaseTextBlockStyle}"
                            Margin="12,6,0,0"/>
-                <!--TextBlock  Grid.Column="1"
+                <TextBlock Grid.Column="2"
+                           Text="{x:Bind firstName}"                          
+                           x:Phase="1"  
+                           Style="{ThemeResource BaseTextBlockStyle}"
+                           Margin="6,6,0,0"/>
+                <TextBlock  Grid.Column="1"
                             Grid.Row="1"
-                            Text="{x:Bind Position}" 
+                            Text="{x:Bind userName}" 
                             x:Phase="2"
                             Style="{ThemeResource BodyTextBlockStyle}"
-                            Margin="12,0,0,6"/-->
+                            Margin="12,0,0,6"/>
             </Grid>
         </DataTemplate>
     </Page.Resources>
@@ -61,8 +67,8 @@
                 VerticalAlignment="Center"
                 Style="{ThemeResource TitleTextBlockStyle}" 
                 Grid.Column="1"/>
-        <StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
-            <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/>
+        <!--StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+            <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/-->
             <!--RichTextBlock FontSize="14" Padding="32" >
                 <Paragraph>This app demonstrates the usage of ListView and Gridview in basic scenarios, the real use of the controls and layout techniques in Master/Detail, and how to implement Tap on left Edge of the item behvior.
                 </Paragraph>
@@ -81,10 +87,10 @@
                     <LineBreak/>
                     <LineBreak/> Copyright (c) Microsoft Corporation. All rights
                 </Paragraph>
-            </RichTextBlock-->
-        </StackPanel>
+            </RichTextBlock>
+        </-->
         <ListView ItemsSource="{x:Bind MyCustomers.View}"
-                  ItemTemplate="{StaticResource ContactListViewTemplate}"
+                  ItemTemplate="{StaticResource AllCustomersTemplate}"
                   SelectionMode="Single"
                   ShowsScrollingPlaceholders="True"
                   Grid.Row="1"

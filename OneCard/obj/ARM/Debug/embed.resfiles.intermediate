@@ -9,6 +9,7 @@ MainOneCardPages\SignInPage.xbf
 NavigationPage.xbf
 PrivateUserPages\AddCardPage.xbf
 PrivateUserPages\AllCardsPage.xbf
+PrivateUserPages\ChosenCardPage.xbf
 PrivateUserPages\FavoritesPage.xbf
 PrivateUserPages\NfcTagsPage.xbf
 PrivateUserPages\privateUserJoinPage.xbf
