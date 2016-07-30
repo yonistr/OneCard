@@ -400,6 +400,7 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\System.Xml.Read
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\OneCard.csprojResolveAssemblyReference.cache
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\App.g.i.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\App.g.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AddNewCustomerPage.g.i.cs
@@ -542,4 +543,3 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\MultipleQualifi
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\resources.en.resfiles
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\ProjectArchitectures.txt
-C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\OneCard.csprojResolveAssemblyReference.cache

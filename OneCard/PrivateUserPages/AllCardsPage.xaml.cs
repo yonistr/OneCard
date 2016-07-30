@@ -29,9 +29,11 @@ namespace OneCard
         public AllCardsPage()
         {
             this.InitializeComponent();
+          
             //App.myUser = GenerateUser();
             MyCards.Source = GeneralCard.GenerateCategory();
         }
+
 
         private void ShowSplitSettings(object sender, RoutedEventArgs e)
         {
@@ -44,7 +46,6 @@ namespace OneCard
             SelectedCard = e.ClickedItem as GeneralCard;
             // Go to the chosen card page and display the full card derived from the general one
             Frame.Navigate(typeof(PrivateUserPages.ChosenCardPage), SelectedCard, new DrillInNavigationTransitionInfo());
-
         }
 
 

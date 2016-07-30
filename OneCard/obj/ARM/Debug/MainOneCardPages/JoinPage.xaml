@@ -8,7 +8,7 @@
     mc:Ignorable="d" Width="315" Height="565">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="5,0,0,5">
-        <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Center" Height="100" Margin="0,60,0,0" VerticalAlignment="Top" Width="103" Source="ms-appx:///Assets/OneCard_logo.png"/>
+        <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Center" Height="140" Margin="0,50,0,0" VerticalAlignment="Top" Width="140" Source="ms-appx:///Assets/OneCard_logo2.png"/>
         <TextBlock x:ConnectionId='2' x:Name="textBlock" HorizontalAlignment="Center" Margin="53,195,56,0" TextWrapping="Wrap" Text="OneCard" VerticalAlignment="Top" Height="64" Width="201" FontSize="48" Style="{StaticResource BodyTextBlockStyle}"/>
         <Button x:ConnectionId='3' x:Name="join_button" Content="Join now" HorizontalAlignment="Left" Margin="84,322,0,0" VerticalAlignment="Top" Height="33" Width="149"                          />
         <Button x:ConnectionId='4' x:Name="sign_button" Content="Sign in" HorizontalAlignment="Left" Margin="84,376,0,0" VerticalAlignment="Top" Height="33" Width="149"                          />

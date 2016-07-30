@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="315" Height="565">
-        <Image x:Name="logoImage" HorizontalAlignment="Center" Height="57" Margin="125,42,134,0" VerticalAlignment="Top" Width="56" Source="ms-appx:///Assets/OneCard_logo.png"/>
+        <Image x:Name="logoImage" HorizontalAlignment="Center" Height="65" Margin="125,42,134,0" VerticalAlignment="Top" Width="65" Source="ms-appx:///Assets/OneCard_logo2.png"/>
         <TextBlock x:Name="logoBlock" HorizontalAlignment="Center" Margin="98,105,102,0" TextWrapping="Wrap" Text="OneCard" VerticalAlignment="Top" Height="36" Width="115" FontSize="29.333" Style="{StaticResource BodyTextBlockStyle}"/>
         <TextBlock x:Name="userNameBlock" HorizontalAlignment="Left" Margin="20,206,0,0" TextWrapping="Wrap" Text="User name" VerticalAlignment="Top" FontSize="18.667"/>
         <TextBox x:Name="userNameBox" HorizontalAlignment="Left" Margin="20,240,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="269" Height="36"/>

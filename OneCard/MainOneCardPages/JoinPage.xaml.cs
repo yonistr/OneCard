@@ -25,6 +25,24 @@ namespace OneCard
         public JoinPage()
         {
             this.InitializeComponent();
+
+            //Customize the status bar
+            CustomeStatusBar();
+        }
+
+        // show the StatusBar
+        private void CustomeStatusBar()
+        {
+            // turn on SystemTray for mobile
+            // don't forget to add a Reference to Windows Mobile Extensions For The UWP
+            if (Windows.Foundation.Metadata.ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+            {
+                var statusbar = Windows.UI.ViewManagement.StatusBar.GetForCurrentView();
+                //await statusbar.ShowAsync();
+                statusbar.BackgroundColor = Windows.UI.Colors.RoyalBlue;
+                statusbar.BackgroundOpacity = 1;
+                statusbar.ForegroundColor = Windows.UI.Colors.White;
+            }
         }
 
         private void sign_Button_Click(object sender, RoutedEventArgs e)

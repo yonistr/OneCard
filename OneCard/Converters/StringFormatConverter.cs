@@ -7,15 +7,14 @@ using System.Threading.Tasks;
 
 namespace OneCard.Converters
 {
-    class StringFormatConverter : IValueConverter
+    public class StringFormatConverter : IValueConverter
     {
         public string StringFormat { get; set; }
 
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            var format = parameter as string;
-            if (!String.IsNullOrEmpty(format))
-                return String.Format(format, value);
+            if (!String.IsNullOrEmpty(StringFormat))
+                return String.Format(StringFormat, value);
 
             return value;
         }

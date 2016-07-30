@@ -543,3 +543,8 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\MultipleQualifi
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\resources.en.resfiles
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\resources.en.resfiles.intermediate
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\ARM\Debug\BusinessPages\ChosenCustomerPage.xbf
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\BusinessPages\ChosenCustomerPage.g.i.cs
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\BusinessPages\ChosenCustomerPage.g.cs
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\BusinessPages\ChosenCustomerPage.xaml
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\ARM\Debug\BusinessPages\ChosenCustomerPage.xbf

@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -46,7 +47,7 @@
                 </Paragraph>
             </RichTextBlock-->
         </StackPanel>
-        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="2">
             <local:PrivateUserNavigateBar x:Name="MyNavigator"/>
         </StackPanel>
         <local:PrivateUserSettingsPane x:Name="MySettings" Grid.ColumnSpan="2" Grid.RowSpan="2" />

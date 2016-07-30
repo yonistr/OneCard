@@ -27,6 +27,7 @@ namespace OneCard.PrivateUserPages
     {
         private GeneralCard SelectedCard { set; get; }
         private FullCard FullSelectedCard { set; get; }
+
         public ChosenCardPage()
         {
             this.InitializeComponent();

@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -34,7 +35,7 @@
             </Button>
             <!--Image Source="/Assets/Nfc_tag.jpg" Height="357" Canvas.Top="104" Width="270" Canvas.Left="49" /-->
         </Canvas>
-        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="2">
             <local:BusinessNavigateBar x:Name="MyNavigator"/>
         </StackPanel>
         <!--local:BusinessNavigateBar x:Name="MyNavigator" Grid.ColumnSpan="2" Grid.Row="1"/-->

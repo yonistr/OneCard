@@ -12,6 +12,7 @@ namespace OneCard
         public string userName { get; set; }
         public string firstName { get; set; }
         public string lastName { get; set; }
+        public string demoLogo { get; set; }//need to delete
 
         public Customer(string user, string first, string last)
         {
