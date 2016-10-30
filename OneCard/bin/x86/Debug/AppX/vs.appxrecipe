@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>59c6bd80-1f6a-4ebf-a82c-d51f56101a41</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>616F52D8611F8AFD79576147911C22719CAD7E9893F03518E4967FA758ACD1CD</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C7236ED63A4986E76D112C95AA77F66BAD792F1F67D477EAF4C0CFDD9FFC701B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>59c6bd80-1f6a-4ebf-a82c-d51f56101a41_1.0.0.0_x86__zz4ye2sdks06y</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>59c6bd80-1f6a-4ebf-a82c-d51f56101a41_zz4ye2sdks06y!App</RegisteredUserModeAppID>
     <RegisteredPackageID>59c6bd80-1f6a-4ebf-a82c-d51f56101a41</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-20T08:28:50.967</Modified>
+      <Modified>2016-10-29T20:37:02.782</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\OneCard.exe">
       <PackagePath>entrypoint\OneCard.exe</PackagePath>
-      <Modified>2016-07-20T08:28:45.128</Modified>
+      <Modified>2016-10-29T20:37:00.891</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -474,9 +474,225 @@
       <PackagePath>Assets\favorite_outlined_sign.png</PackagePath>
       <Modified>2016-07-12T22:32:21.474</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NewStoreLogo.scale-100.png">
+      <PackagePath>Assets\NewStoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.815</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NewStoreLogo.scale-125.png">
+      <PackagePath>Assets\NewStoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.826</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NewStoreLogo.scale-150.png">
+      <PackagePath>Assets\NewStoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NewStoreLogo.scale-200.png">
+      <PackagePath>Assets\NewStoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.848</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NewStoreLogo.scale-400.png">
+      <PackagePath>Assets\NewStoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.861</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_bigsplash2.png">
+      <PackagePath>Assets\OneCard_bigsplash2.png</PackagePath>
+      <Modified>2016-07-28T18:06:36.217</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_logo.png">
       <PackagePath>Assets\OneCard_logo.png</PackagePath>
       <Modified>2016-02-21T10:30:59.976</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_logo2.png">
+      <PackagePath>Assets\OneCard_logo2.png</PackagePath>
+      <Modified>2016-07-28T17:54:51.194</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_splash2.png">
+      <PackagePath>Assets\OneCard_splash2.png</PackagePath>
+      <Modified>2016-07-28T18:01:14.282</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\profile image.png">
+      <PackagePath>Assets\profile image.png</PackagePath>
+      <Modified>2016-08-01T21:20:51.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T18:07:36.668</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T18:07:36.603</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T18:07:36.630</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T18:07:36.683</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.420</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.433</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square310x310Logo.scale-100.png">
+      <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.552</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square310x310Logo.scale-125.png">
+      <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square310x310Logo.scale-150.png">
+      <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.584</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square310x310Logo.scale-200.png">
+      <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.598</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square310x310Logo.scale-400.png">
+      <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.631</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.643</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.654</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.664</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.687</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.697</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-16_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.708</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.741</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-256_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.804</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-32_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.728</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-48_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.789</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.381</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.385</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square71x71Logo.scale-150.png">
+      <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.383</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square71x71Logo.scale-200.png">
+      <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.386</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square71x71Logo.scale-400.png">
+      <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.399</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.476</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.489</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2016-07-28T17:57:40.538</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -485,32 +701,31 @@
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T19:09:42.000</Modified>
+      <Modified>2016-07-28T18:07:36.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T19:09:42.000</Modified>
+      <Modified>2016-07-28T17:57:40.446</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T19:09:42.000</Modified>
+      <Modified>2016-07-28T17:57:40.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T19:09:42.000</Modified>
+      <Modified>2016-07-28T17:57:40.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-10-10T19:09:42.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-10T19:09:42.000</Modified>
+      <Modified>2016-07-28T17:57:40.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\NFC_phone.jpg">
       <PackagePath>Assets\NFC_phone.jpg</PackagePath>
@@ -526,7 +741,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\OneCard.xr.xml">
       <PackagePath>OneCard.xr.xml</PackagePath>
-      <Modified>2016-07-14T15:24:35.084</Modified>
+      <Modified>2016-08-22T08:47:33.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -534,11 +749,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-20T08:28:49.254</Modified>
+      <Modified>2016-10-29T20:37:02.182</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\Core\OneCard.exe">
       <PackagePath>OneCard.exe</PackagePath>
-      <Modified>2016-07-20T08:28:50.942</Modified>
+      <Modified>2016-10-29T20:37:02.777</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

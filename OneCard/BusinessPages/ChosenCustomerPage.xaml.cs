@@ -6,6 +6,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -41,6 +42,8 @@ namespace OneCard.BusinessPages
             // get the full card from the server
             DetailedSelectedCustomer = DetailedCustomer.GenerateDetailedCustomerDemo(SelectedCustomer);
 
+
+
             //Register for hardware and software back request from the system
             SystemNavigationManager systemNavigationManager = SystemNavigationManager.GetForCurrentView();
             systemNavigationManager.BackRequested += OnBackRequested;
@@ -62,6 +65,48 @@ namespace OneCard.BusinessPages
             // Page above us will be our master view.
             // Make sure we are using the "drill out" animation in this transition.
             Frame.Navigate(typeof(AllCustomersPage), "Back", new EntranceNavigationTransitionInfo());
+        }
+
+        private void ShowSplitSubscriptionEdit(object sender, RoutedEventArgs e)
+        {
+            SubscriptionEditSplitView.IsPaneOpen = !SubscriptionEditSplitView.IsPaneOpen;
+
+            // Set the current expiry date of the subsciption to the "Subscription Edit" panel calander date picker
+            ExpiryDateDatePicker.Date = DetailedSelectedCustomer.subscriptionInfo.expiryDate;
+
+            // Uncheck the checkboxs in "Subscription Edit" panel
+            CancelTagsCheckBox.IsChecked = false;
+            ResetLastUseCheckBox.IsChecked = false;
+
+
+            this.Bindings.Update();
+        }
+
+        private async void ApproveCahngesClicked(object sender, RoutedEventArgs e)
+        {
+            // First get an approval from the customer to the changes the save changes
+
+            DetailedSelectedCustomer.subscriptionInfo.description = DescriptionTextBox.Text;
+            DetailedSelectedCustomer.subscriptionInfo.type = TypeTextBox.Text;
+            if (ExpiryDateDatePicker.Date.HasValue)
+                DetailedSelectedCustomer.subscriptionInfo.expiryDate = ExpiryDateDatePicker.Date.Value.DateTime;
+            DetailedSelectedCustomer.subscriptionInfo.numOfTagsAllowed = AllowedTagsComboBox.SelectedIndex;
+            if (CancelTagsCheckBox.IsChecked.Value)
+                DetailedSelectedCustomer.subscriptionInfo.numOfTagsInUse = 0;
+            if (ResetLastUseCheckBox.IsChecked.Value)
+                DetailedSelectedCustomer.subscriptionInfo.lastUse = DateTime.MinValue;
+
+            // Send changes to server - TODO
+
+            MessageDialog dialog = new MessageDialog("Subscription was changed successfully!!");
+
+            await dialog.ShowAsync();
+
+            this.Bindings.Update();
+
+            SubscriptionEditSplitView.IsPaneOpen = !SubscriptionEditSplitView.IsPaneOpen;
+
+            return;
         }
     }
 }

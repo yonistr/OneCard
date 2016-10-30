@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -11,6 +12,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
@@ -22,14 +24,45 @@ namespace OneCard
     /// </summary>
     public sealed partial class NfcTagsPage : Page
     {
+        private NfcTag selectedTag;
+
+        private ObservableCollection<NfcTag> Tags;
+
         public NfcTagsPage()
         {
             this.InitializeComponent();
+            Tags = NfcTag.GenerateTagsDemo();
+            MyNfcTags.Source = Tags;
+        }
+
+        private void OnItemClick(object sender, ItemClickEventArgs e)
+        {
+            selectedTag = e.ClickedItem as NfcTag;
         }
 
         private void ShowSplitSettings(object sender, RoutedEventArgs e)
         {
             MySettings.privateUserSettingsSplitView.IsPaneOpen = !MySettings.privateUserSettingsSplitView.IsPaneOpen;
         }
+
+        private void DeleteConfirmation_Click(object sender, RoutedEventArgs e)
+        {
+            if (selectedTag != null)
+            {
+                Tags.Remove(selectedTag);
+                Flyout f = this.TrashButton.Flyout as Flyout;
+                if (f != null)
+                {
+                    f.Hide();
+                }
+                /*if (NfcTags.Items.Count > 0)
+                {
+                    NfcTags.SelectedIndex = 0;
+                    selectedTag = NfcTags.SelectedItem as NfcTag;
+                }*/
+            }
+        }
+
+
     }
 }

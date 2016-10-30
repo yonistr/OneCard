@@ -187,6 +187,7 @@
     <Content Include="Assets\OneCard_logo.png" />
     <Content Include="Assets\OneCard_logo2.png" />
     <Content Include="Assets\OneCard_splash2.png" />
+    <Content Include="Assets\profile image.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-125.png" />
     <Content Include="Assets\SplashScreen.scale-150.png" />

@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -27,7 +28,7 @@
         <StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
             <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/>
         </StackPanel>
-        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="2">
             <local:PrivateUserNavigateBar x:ConnectionId='3' x:Name="MyNavigator"/>
         </StackPanel>
         <local:PrivateUserSettingsPane x:ConnectionId='2' x:Name="MySettings" Grid.ColumnSpan="2" Grid.RowSpan="2" />

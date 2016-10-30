@@ -3,6 +3,7 @@ BusinessPages\AddNewCustomerPage.xbf
 BusinessPages\AllCustomersPage.xbf
 BusinessPages\BusinessNavigateBar.xbf
 BusinessPages\BusinessSettingsPane.xbf
+BusinessPages\ChosenCustomerPage.xbf
 BusinessPages\IdentifierPage.xbf
 MainOneCardPages\JoinPage.xbf
 MainOneCardPages\SignInPage.xbf

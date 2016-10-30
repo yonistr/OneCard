@@ -11,6 +11,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -28,7 +29,7 @@
             <TextBox Height="60" Header="Enter the customer OneCard's username:" PlaceholderText="Username"  Canvas.Top="192" Canvas.Left="44" />
             <Button x:ConnectionId='4' x:Name="next_button" Content="Next" Canvas.Left="136" Canvas.Top="264"                                    />
         </Canvas>
-        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="2">
             <local:BusinessNavigateBar x:ConnectionId='3' x:Name="MyNavigator"/>
         </StackPanel>
         <!--local:BusinessNavigateBar x:Name="MyNavigator" Grid.ColumnSpan="2" Grid.Row="1"/-->

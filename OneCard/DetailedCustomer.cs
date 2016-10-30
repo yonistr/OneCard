@@ -25,7 +25,7 @@ namespace OneCard
             DetailedCustomer detailedCustomer = new DetailedCustomer(customer.userName, customer.firstName, customer.lastName);
             detailedCustomer.subscriptionInfo = SubscriptionInfo.GenerateSubscriptionDemo();
             detailedCustomer.contactInfo = ContactInfo.GenerateContactDemo();
-            detailedCustomer.demoLogo = "ms-appx:///Assets/OneCard_logo.png";
+            detailedCustomer.demoLogo = "ms-appx:///Assets/profile image.png";
             detailedCustomer.dateOfBirth = new DateTime(1989, 2, 3);
             return detailedCustomer;
         }

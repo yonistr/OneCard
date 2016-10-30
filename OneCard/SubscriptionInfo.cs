@@ -20,10 +20,7 @@ namespace OneCard
         {
             get
             {
-                if (_tagsInUseOfAllowed == string.Empty)
-                {
-                    _tagsInUseOfAllowed = numOfTagsInUse + "/" + numOfTagsAllowed;
-                }
+                _tagsInUseOfAllowed = numOfTagsInUse + "/" + numOfTagsAllowed;
                 return _tagsInUseOfAllowed;
             }
         }

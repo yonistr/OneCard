@@ -14,11 +14,25 @@ namespace OneCard
         public string lastName { get; set; }
         public string demoLogo { get; set; }//need to delete
 
+        private string _fullName;
+        public string FullName
+        {
+            get
+            {
+                if (_fullName == string.Empty)
+                {
+                    _fullName = firstName + " " + lastName;
+                }
+                return _fullName;
+            }
+        }
+
         public Customer(string user, string first, string last)
         {
             userName = user;
             firstName = first;
             lastName = last;
+            _fullName = string.Empty;
         }
 
         public static ObservableCollection<CustomerInitials> GenerateCustomersSample()

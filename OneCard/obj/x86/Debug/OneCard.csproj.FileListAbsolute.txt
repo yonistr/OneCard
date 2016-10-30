@@ -271,6 +271,7 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\ApplicationInsi
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\App.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\AddNewCustomerPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\AllCustomersPage.xbf
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\ChosenCustomerPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\IdentifierPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\BusinessNavigateBar.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\bin\x86\Debug\BusinessPages\BusinessSettingsPane.xbf
@@ -407,6 +408,8 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\A
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AddNewCustomerPage.g.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AllCustomersPage.g.i.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AllCustomersPage.g.cs
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\ChosenCustomerPage.g.i.cs
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\ChosenCustomerPage.g.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\IdentifierPage.g.i.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\IdentifierPage.g.cs
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\BusinessNavigateBar.g.i.cs
@@ -439,6 +442,7 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\XamlTypeInfo.g.
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\App.xaml
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AddNewCustomerPage.xaml
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AllCustomersPage.xaml
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\ChosenCustomerPage.xaml
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\IdentifierPage.xaml
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\BusinessNavigateBar.xaml
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\BusinessSettingsPane.xaml
@@ -456,6 +460,7 @@ C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\MainOneCardPage
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\App.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AddNewCustomerPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\AllCustomersPage.xbf
+C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\ChosenCustomerPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\IdentifierPage.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\BusinessNavigateBar.xbf
 C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\obj\x86\Debug\BusinessPages\BusinessSettingsPane.xbf

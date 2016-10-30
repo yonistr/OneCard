@@ -386,6 +386,9 @@
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\OneCard_splash2.png">
       <PackagePath>Assets\OneCard_splash2.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\profile image.png">
+      <PackagePath>Assets\profile image.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jonathan\Documents\GitHub\OneCard\OneCard\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>

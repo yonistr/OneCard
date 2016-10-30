@@ -37,7 +37,7 @@
                            Margin="12,6,0,0"/>
                 <!--TextBlock  Grid.Column="1"
                             Grid.Row="1"
-                            Text="{x:Bind Position}" 
+                            Text="{x:Bind tagOwner}" 
                             x:Phase="2"
                             Style="{ThemeResource BodyTextBlockStyle}"
                             Margin="12,0,0,6"/-->

@@ -29,7 +29,7 @@
                          Margin="6"
                          VerticalAlignment="Center"
                          HorizontalAlignment="Center"
-                         Fill="LightGray"/>
+                         Fill="RoyalBlue"/>
                 <TextBlock x:ConnectionId='5' Grid.Column="1"
                                                 
                                         
@@ -37,7 +37,7 @@
                            Margin="12,6,0,0"/>
                 <!--TextBlock  Grid.Column="1"
                             Grid.Row="1"
-                            Text="{x:Bind Position}" 
+                            Text="{x:Bind tagOwner}" 
                             x:Phase="2"
                             Style="{ThemeResource BodyTextBlockStyle}"
                             Margin="12,0,0,6"/-->
@@ -49,6 +49,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -62,9 +63,7 @@
                 VerticalAlignment="Center"
                 Style="{ThemeResource TitleTextBlockStyle}" 
                 Grid.Column="1"/>
-        <!--StackPanel Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
-            <TextBlock Text="Corrently Unactive" HorizontalAlignment="Center" FontSize="29.333"/>
-        </-->
+
         <ListView x:ConnectionId='7'                                    
                   ItemTemplate="{StaticResource AllCardsTemplate}"
                   IsItemClickEnabled="True"
@@ -85,7 +84,7 @@
                 </GroupStyle>
             </ListView.GroupStyle>
         </ListView>
-        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="1">
+        <StackPanel  VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Orientation="Vertical" Grid.ColumnSpan="2" Grid.Row="2">
             <local:PrivateUserNavigateBar x:ConnectionId='9' x:Name="MyNavigator"/>
         </StackPanel>
         <local:PrivateUserSettingsPane x:ConnectionId='8' x:Name="MySettings" Grid.ColumnSpan="2" Grid.RowSpan="2" />

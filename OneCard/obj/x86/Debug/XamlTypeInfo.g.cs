@@ -132,51 +132,53 @@ namespace OneCard.OneCard_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[21];
+            _typeNameTable = new string[22];
             _typeNameTable[0] = "OneCard.BusinessSettingsPane";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[2] = "OneCard.BusinessNavigateBar";
             _typeNameTable[3] = "OneCard.AddNewCustomerPage";
             _typeNameTable[4] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[5] = "OneCard.AllCustomersPage";
-            _typeNameTable[6] = "OneCard.IdentifierPage";
-            _typeNameTable[7] = "OneCard.PrivateUserSettingsPane";
-            _typeNameTable[8] = "OneCard.PrivateUserNavigateBar";
-            _typeNameTable[9] = "OneCard.AddCardPage";
-            _typeNameTable[10] = "OneCard.Converters.StringFormatConverter";
-            _typeNameTable[11] = "Object";
-            _typeNameTable[12] = "String";
-            _typeNameTable[13] = "OneCard.PrivateUserPages.ChosenCardPage";
-            _typeNameTable[14] = "OneCard.FavoritesPage";
-            _typeNameTable[15] = "OneCard.NfcTagsPage";
-            _typeNameTable[16] = "OneCard.NavigationPage";
-            _typeNameTable[17] = "OneCard.AllCardsPage";
-            _typeNameTable[18] = "OneCard.privateUserJoinPage";
-            _typeNameTable[19] = "OneCard.JoinPage";
-            _typeNameTable[20] = "OneCard.SignInPage";
+            _typeNameTable[6] = "OneCard.Converters.StringFormatConverter";
+            _typeNameTable[7] = "Object";
+            _typeNameTable[8] = "String";
+            _typeNameTable[9] = "OneCard.BusinessPages.ChosenCustomerPage";
+            _typeNameTable[10] = "OneCard.IdentifierPage";
+            _typeNameTable[11] = "OneCard.PrivateUserSettingsPane";
+            _typeNameTable[12] = "OneCard.PrivateUserNavigateBar";
+            _typeNameTable[13] = "OneCard.AddCardPage";
+            _typeNameTable[14] = "OneCard.PrivateUserPages.ChosenCardPage";
+            _typeNameTable[15] = "OneCard.FavoritesPage";
+            _typeNameTable[16] = "OneCard.NfcTagsPage";
+            _typeNameTable[17] = "OneCard.NavigationPage";
+            _typeNameTable[18] = "OneCard.AllCardsPage";
+            _typeNameTable[19] = "OneCard.privateUserJoinPage";
+            _typeNameTable[20] = "OneCard.JoinPage";
+            _typeNameTable[21] = "OneCard.SignInPage";
 
-            _typeTable = new global::System.Type[21];
+            _typeTable = new global::System.Type[22];
             _typeTable[0] = typeof(global::OneCard.BusinessSettingsPane);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[2] = typeof(global::OneCard.BusinessNavigateBar);
             _typeTable[3] = typeof(global::OneCard.AddNewCustomerPage);
             _typeTable[4] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[5] = typeof(global::OneCard.AllCustomersPage);
-            _typeTable[6] = typeof(global::OneCard.IdentifierPage);
-            _typeTable[7] = typeof(global::OneCard.PrivateUserSettingsPane);
-            _typeTable[8] = typeof(global::OneCard.PrivateUserNavigateBar);
-            _typeTable[9] = typeof(global::OneCard.AddCardPage);
-            _typeTable[10] = typeof(global::OneCard.Converters.StringFormatConverter);
-            _typeTable[11] = typeof(global::System.Object);
-            _typeTable[12] = typeof(global::System.String);
-            _typeTable[13] = typeof(global::OneCard.PrivateUserPages.ChosenCardPage);
-            _typeTable[14] = typeof(global::OneCard.FavoritesPage);
-            _typeTable[15] = typeof(global::OneCard.NfcTagsPage);
-            _typeTable[16] = typeof(global::OneCard.NavigationPage);
-            _typeTable[17] = typeof(global::OneCard.AllCardsPage);
-            _typeTable[18] = typeof(global::OneCard.privateUserJoinPage);
-            _typeTable[19] = typeof(global::OneCard.JoinPage);
-            _typeTable[20] = typeof(global::OneCard.SignInPage);
+            _typeTable[6] = typeof(global::OneCard.Converters.StringFormatConverter);
+            _typeTable[7] = typeof(global::System.Object);
+            _typeTable[8] = typeof(global::System.String);
+            _typeTable[9] = typeof(global::OneCard.BusinessPages.ChosenCustomerPage);
+            _typeTable[10] = typeof(global::OneCard.IdentifierPage);
+            _typeTable[11] = typeof(global::OneCard.PrivateUserSettingsPane);
+            _typeTable[12] = typeof(global::OneCard.PrivateUserNavigateBar);
+            _typeTable[13] = typeof(global::OneCard.AddCardPage);
+            _typeTable[14] = typeof(global::OneCard.PrivateUserPages.ChosenCardPage);
+            _typeTable[15] = typeof(global::OneCard.FavoritesPage);
+            _typeTable[16] = typeof(global::OneCard.NfcTagsPage);
+            _typeTable[17] = typeof(global::OneCard.NavigationPage);
+            _typeTable[18] = typeof(global::OneCard.AllCardsPage);
+            _typeTable[19] = typeof(global::OneCard.privateUserJoinPage);
+            _typeTable[20] = typeof(global::OneCard.JoinPage);
+            _typeTable[21] = typeof(global::OneCard.SignInPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -215,19 +217,20 @@ namespace OneCard.OneCard_XamlTypeInfo
         private object Activate_2_BusinessNavigateBar() { return new global::OneCard.BusinessNavigateBar(); }
         private object Activate_3_AddNewCustomerPage() { return new global::OneCard.AddNewCustomerPage(); }
         private object Activate_5_AllCustomersPage() { return new global::OneCard.AllCustomersPage(); }
-        private object Activate_6_IdentifierPage() { return new global::OneCard.IdentifierPage(); }
-        private object Activate_7_PrivateUserSettingsPane() { return new global::OneCard.PrivateUserSettingsPane(); }
-        private object Activate_8_PrivateUserNavigateBar() { return new global::OneCard.PrivateUserNavigateBar(); }
-        private object Activate_9_AddCardPage() { return new global::OneCard.AddCardPage(); }
-        private object Activate_10_StringFormatConverter() { return new global::OneCard.Converters.StringFormatConverter(); }
-        private object Activate_13_ChosenCardPage() { return new global::OneCard.PrivateUserPages.ChosenCardPage(); }
-        private object Activate_14_FavoritesPage() { return new global::OneCard.FavoritesPage(); }
-        private object Activate_15_NfcTagsPage() { return new global::OneCard.NfcTagsPage(); }
-        private object Activate_16_NavigationPage() { return new global::OneCard.NavigationPage(); }
-        private object Activate_17_AllCardsPage() { return new global::OneCard.AllCardsPage(); }
-        private object Activate_18_privateUserJoinPage() { return new global::OneCard.privateUserJoinPage(); }
-        private object Activate_19_JoinPage() { return new global::OneCard.JoinPage(); }
-        private object Activate_20_SignInPage() { return new global::OneCard.SignInPage(); }
+        private object Activate_6_StringFormatConverter() { return new global::OneCard.Converters.StringFormatConverter(); }
+        private object Activate_9_ChosenCustomerPage() { return new global::OneCard.BusinessPages.ChosenCustomerPage(); }
+        private object Activate_10_IdentifierPage() { return new global::OneCard.IdentifierPage(); }
+        private object Activate_11_PrivateUserSettingsPane() { return new global::OneCard.PrivateUserSettingsPane(); }
+        private object Activate_12_PrivateUserNavigateBar() { return new global::OneCard.PrivateUserNavigateBar(); }
+        private object Activate_13_AddCardPage() { return new global::OneCard.AddCardPage(); }
+        private object Activate_14_ChosenCardPage() { return new global::OneCard.PrivateUserPages.ChosenCardPage(); }
+        private object Activate_15_FavoritesPage() { return new global::OneCard.FavoritesPage(); }
+        private object Activate_16_NfcTagsPage() { return new global::OneCard.NfcTagsPage(); }
+        private object Activate_17_NavigationPage() { return new global::OneCard.NavigationPage(); }
+        private object Activate_18_AllCardsPage() { return new global::OneCard.AllCardsPage(); }
+        private object Activate_19_privateUserJoinPage() { return new global::OneCard.privateUserJoinPage(); }
+        private object Activate_20_JoinPage() { return new global::OneCard.JoinPage(); }
+        private object Activate_21_SignInPage() { return new global::OneCard.SignInPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -275,102 +278,109 @@ namespace OneCard.OneCard_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 6:   //  OneCard.IdentifierPage
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_IdentifierPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 7:   //  OneCard.PrivateUserSettingsPane
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_7_PrivateUserSettingsPane;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 8:   //  OneCard.PrivateUserNavigateBar
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_8_PrivateUserNavigateBar;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 9:   //  OneCard.AddCardPage
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_AddCardPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 10:   //  OneCard.Converters.StringFormatConverter
+            case 6:   //  OneCard.Converters.StringFormatConverter
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_10_StringFormatConverter;
+                userType.Activator = Activate_6_StringFormatConverter;
                 userType.AddMemberName("StringFormat");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 11:   //  Object
+            case 7:   //  Object
                 xamlType = new global::OneCard.OneCard_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 12:   //  String
+            case 8:   //  String
                 xamlType = new global::OneCard.OneCard_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 13:   //  OneCard.PrivateUserPages.ChosenCardPage
+            case 9:   //  OneCard.BusinessPages.ChosenCustomerPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_ChosenCardPage;
+                userType.Activator = Activate_9_ChosenCustomerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 14:   //  OneCard.FavoritesPage
+            case 10:   //  OneCard.IdentifierPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_FavoritesPage;
+                userType.Activator = Activate_10_IdentifierPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  OneCard.NfcTagsPage
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_15_NfcTagsPage;
+            case 11:   //  OneCard.PrivateUserSettingsPane
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_11_PrivateUserSettingsPane;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  OneCard.NavigationPage
-                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_16_NavigationPage;
+            case 12:   //  OneCard.PrivateUserNavigateBar
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_12_PrivateUserNavigateBar;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  OneCard.AllCardsPage
+            case 13:   //  OneCard.AddCardPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_AllCardsPage;
+                userType.Activator = Activate_13_AddCardPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  OneCard.privateUserJoinPage
+            case 14:   //  OneCard.PrivateUserPages.ChosenCardPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_18_privateUserJoinPage;
+                userType.Activator = Activate_14_ChosenCardPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  OneCard.JoinPage
+            case 15:   //  OneCard.FavoritesPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_19_JoinPage;
+                userType.Activator = Activate_15_FavoritesPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  OneCard.SignInPage
+            case 16:   //  OneCard.NfcTagsPage
                 userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_SignInPage;
+                userType.Activator = Activate_16_NfcTagsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  OneCard.NavigationPage
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_NavigationPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  OneCard.AllCardsPage
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_AllCardsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  OneCard.privateUserJoinPage
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_privateUserJoinPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 20:   //  OneCard.JoinPage
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_20_JoinPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 21:   //  OneCard.SignInPage
+                userType = new global::OneCard.OneCard_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_21_SignInPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
