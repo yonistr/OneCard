@@ -15,136 +15,120 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using NdefLibrary.Ndef;
 
+
+
+
+
+
 namespace OneCard
 {
-    class NFCUtils
+    public class NfcUtils
     {
-        // NFC
-        public static ProximityDevice _device;
-        public static long _subscribedMessageId;
-        //private static long _publishedMessageId = -1;
+        private ProximityDevice _device;
+        private long _subscriptionIdNdef;
+        private long _publishingMessageId;
+        private Byte[] _DeviceId;
+        private Byte[] _SelfID;
+        private String _Content;
 
-        /*// Smart Card
-        private SmartCardReader _smartCardReader;*/
-
-        /*// UI
-        private readonly CoreDispatcher _dispatcher;
-        */
-
-        /*public MainPage()
+        public NfcUtils()
         {
-            this.InitializeComponent();
-            _dispatcher = CoreWindow.GetForCurrentThread().Dispatcher;
-        }*/
-
-        #region NDEF
-        public static void NfcNdefRead()
-        {
-            if (_device != null) return;
-            // Start NDEF subscription
-            _device = ProximityDevice.GetDefault();
-            _subscribedMessageId = _device.SubscribeForMessage("NDEF", MessageReceivedHandler);
-            //SetStatusOutput("Subscribed for NDEF / NFC");
+            this._device = ProximityDevice.GetDefault();
+            this._subscriptionIdNdef = 0;
+            this._publishingMessageId = 0;
+            this._DeviceId = new Byte[7];
+            this._SelfID = new Byte[7]; //check how to get it 
+            this._Content = "";
+            Array.Clear(_DeviceId, 0, 7);
         }
 
-        public static void MessageReceivedHandler(ProximityDevice sender, ProximityMessage message)
+        private void _ActivateNfc() //should it be public?
         {
-            //SetStatusOutput("Found proximity card");
-            // Convert to NdefMessage from NDEF / NFC Library
-            var msgArray = message.Data.ToArray();
-            NdefMessage ndefMessage = NdefMessage.FromByteArray(msgArray);
-            // Loop over all records contained in the message
-            foreach (NdefRecord record in ndefMessage)
+            if (_device != null)
             {
-
-                // Check the type of each record 
-                if (record.CheckSpecializedType(false) == typeof(NdefTextRecord))
-                {
-                    // Convert and extract Text info
-                    var textRecord = new NdefTextRecord(record);
-                    App.NfcRecivedMaessage = textRecord.ToString();
-                    //SetStatusOutput("NDEF Text: " + textRecord.Text);
-                }
+                _device.DeviceArrived += _NfcDeviceArrived;
+                _device.DeviceDeparted += _NfcDeviceDeparted;
             }
         }
-        #endregion
 
-        /*#region Smart Card
-        private void SmartCardButton_Click(object sender, RoutedEventArgs e)
+        private void _NfcDeviceArrived(ProximityDevice sender)
         {
-            _dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () => await InitSmartCardAsync());
+            //device arrived handler
         }
 
-        private async Task InitSmartCardAsync()
+        private void _NfcDeviceDeparted(ProximityDevice sender)
         {
-            // Check if the SmartCardConnection API exists on this currently running SKU of Windows
-            if (!ApiInformation.IsTypePresent("Windows.Devices.SmartCards.SmartCardConnection"))
+            //device departed handler
+            Array.Clear(_DeviceId, 0, 7);
+        }
+
+        private void _ReadTagContent()
+        {
+            if (_subscriptionIdNdef != 0) return;
+            _subscriptionIdNdef = _device.SubscribeForMessage("NDEF", MessageReceivedHandler);
+
+        }
+
+        private async void MessageReceivedHandler(ProximityDevice sender, ProximityMessage message)
+        {
+            _Content = message.Data.ToString();
+        }
+
+        public String GetDeviceId()
+        {
+            return _DeviceId.ToString();
+        }
+
+        public String GetSelfID()
+        {
+            return _SelfID.ToString();
+        }
+
+        public String ReadNfcData()
+        {
+            return _Content;
+        }
+
+        public void WriteToTag(String message)
+        {
+            PublishRecord(message, true);
+        }
+
+        public void WriteToDevice(String message)
+        {
+            PublishRecord(message, false);
+        }
+
+        private void PublishRecord(String message, bool writeToTag)
+        {
+            if (_device == null) return;
+            var record = new NdefTextRecord { Text = message };
+            // Make sure we're not already publishing another message
+            StopPublishingMessage(false);
+            // Wrap the NDEF record into an NDEF message
+            var NdefMessage = new NdefMessage { record };
+            // Convert the NDEF message to a byte array
+            var msgArray = NdefMessage.ToByteArray();
+            try
             {
-                // This SKU of Windows does not support Smart Card Connections
-                SetStatusOutput("This SKU of Windows does not support Smart Card connections");
-                return;
+                // Publish the NDEF message to a tag or to another device, depending on the writeToTag parameter
+                // Save the publication ID so that we can cancel publication later
+                _publishingMessageId = _device.PublishBinaryMessage((writeToTag ? "NDEF:WriteTag" : "NDEF"), msgArray.AsBuffer(), MessageWrittenHandler);
+
             }
-
-            // Initialize smart card reader
-            var devSelector = SmartCardReader.GetDeviceSelector(SmartCardReaderKind.Nfc);
-            var devices = await DeviceInformation.FindAllAsync(devSelector);
-
-            if (devices != null && devices.Count == 0)
+            catch (Exception e)
             {
-                SetStatusOutput("No NFC Smart Card Reader found in this device.");
-                return;
+
             }
-
-            // Subscribe to Smart Cards
-            _smartCardReader = await SmartCardReader.FromIdAsync(devices.FirstOrDefault().Id);
-            _smartCardReader.CardAdded += SmartCardReaderOnCardAdded;
-            SetStatusOutput("Subscribed for NFC Smart Cards");
         }
-
-        private async void SmartCardReaderOnCardAdded(SmartCardReader sender, CardAddedEventArgs args)
+        private void StopPublishingMessage(bool writeToStatusOutput)
         {
-            SetStatusOutput("Found smart card");
-
-            // Get Answer to Reset (ATR) according to ISO 7816
-            // ATR = info about smart card's characteristics, behaviors, and state
-            // https://en.wikipedia.org/wiki/Answer_to_reset
-            var info = await args.SmartCard.GetAnswerToResetAsync();
-            var infoArray = info.ToArray();
-            SetStatusOutput("Answer to Reset: " + BitConverter.ToString(infoArray));
-
-            // Connect to the card
-            // var connection = await args.SmartCard.ConnectAsync();
-            // ...
+            if (_publishingMessageId != 0 && _device != null)
+            {
+                // Stop publishing the message
+                _device.StopPublishingMessage(_publishingMessageId);
+                _publishingMessageId = 0;
+            }
         }
-
-        #endregion*/
-
-        /*#region NDEF_WRITE
-
-        private void NdefWriteButton_click(object sender, RoutedEventArgs e)
-        {
-            if (_device != null) return;
-            //get the String message and set it to correct format
-            string str = "Some String"; //to be replaced
-            // Start NDEF subscription
-            _device = ProximityDevice.GetDefault();
-            if (_publishedMessageId != -1) return;
-            _publishedMessageId = _device.PublishMessage("NDEF", str);
-            SetStatusOutput("Published NDEF / NFC");
-        }
-
-        #endregion*/
-
-        /*#region UI
-
-        private void SetStatusOutput(string newStatus)
-        {
-            // Update the status output UI element in the UI thread
-            // (some of the callbacks are in a different thread that wouldn't be allowed
-            // to modify the UI thread)
-            _dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => { if (StatusOutput != null) StatusOutput.Text += "\n" + newStatus; });
-        }
-
-        #endregion*/
     }
 }
